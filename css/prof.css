@@ -1,0 +1,54 @@
+/* ====================================
+   ========== Author Profile ==========
+   ==================================== */
+section#authorProf {
+	margin-bottom: 20px;
+}
+
+section#authorProf .profileBox,
+section#authorProf img {
+	float: left;
+}
+
+section#authorProf img {
+	position: relative;
+	left: 50px;
+	width: 200px;
+	height: 180px;
+}
+
+/* ====================================
+   ========== Wakame Profile ==========
+   ==================================== */
+section#wakameProf {
+	margin-top: 20px;
+}
+
+section#wakameProf img,
+section#wakameProf .profileBox {
+	float: right;
+}
+
+section#wakameProf img {
+	position: relative;
+	right: 100px;
+	width: 200px;
+	height: 180px;
+}
+
+/* =================================
+   ========== Profile Box ==========
+   ================================= */
+.profileBox {
+	width: 500px;
+}
+
+.profileBox header {
+	width: 500px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.profileBox p {
+	margin-left: 30px;
+}
