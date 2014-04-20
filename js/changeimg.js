@@ -1,12 +1,8 @@
 $(document).ready(function() {
-	var imgs = $("nav ul li a img");
-	imgs.each(function() {
-		var key = imgs.index($(this)) + 1;
-		$(this).mouseover(function() {
-			$(this).attr("src", "/img/onwkm" + key + ".png");
-		});
-		$(this).mouseout(function() {
-			$(this).attr("src", "/img/ofwkm" + key + ".png");
-		});
+	$("nav ul li a img").on("mouseover touchstart", function() {
+		$(this).attr("src", $(this).attr("src").replace("of", "on"));
+	});
+	$("nav ul li a img").on("mouseout touchend", function() {
+		$(this).attr("src", $(this).attr("src").replace("on", "of"));
 	});
 });
