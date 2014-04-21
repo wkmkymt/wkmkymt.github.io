@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="ワカメ, わけワカメくん, わけワカ美ちゃん, クリスマス, チャット" />
+    <meta name="description" content="わけワカ美ちゃんとチャットしながらクリスマスを過ごせるサイト" />
+    <meta name="author" content="Mt.K" />
+    <meta name="viewport" content="user-scalable = no" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <script src="/js/lib/jquery.min.js"></script>
+
+    <script src="/js/message.js"></script>
+    <script src="/js/wakamichan.js"></script>
+    <script src="/js/wakachat.js"></script>
+
+    <title>WakaChat</title>
+  </head>
+
+  <body>
+    <header class="siteBar">
+      <h1>WakaChat</h1>
+    </header>
+
+    <div id="main" class="clearfix">
+      <!-- ===== Begin Side Bar ===== -->
+      <div id="manageBar">
+        <!-- Begin Form Area -->
+        <div id="messageForm" class="greenBox">
+          <form>
+            <p>
+              <label>Name</label>
+              <input id="msgName" type="text" />
+            </p>
+            <p>
+              <label>Text</label>
+            </p>
+            <textarea id="msgText"></textarea>
+            <p id="sendArea">
+              <input id="sendBtn" type="button" value="Send" />
+              <span>Please enter correctly...</span>
+            </p>
+          </form>
+        </div>
+        <!-- End Form Area -->
+
+        <!-- Begin Move Bar -->
+        <div id="moveBar" class="clearfix">
+          <div class="greenBox circleBtn topBtn">
+          </div>
+
+          <div class="greenBox circleBtn bottomBtn">
+          </div>
+        </div>
+      </div>
+      <!-- End Move Bar -->
+      <!-- ===== End Side Bar ===== -->
+
+      <!-- ===== Begin Chat Area ===== -->
+      <div id="chatArea" class="greenBox">
+        <ul id="messageBox" class="clearfix">
+        </ul>
+      </div>
+      <!-- ===== End Chat Area ===== -->
+    </div>
+
+    <footer class="siteBar">
+      <p><small>&copy; 2013 Mt.K / WakeWakameKun</small></p>
+    </footer>
+  </body>
+</html>
