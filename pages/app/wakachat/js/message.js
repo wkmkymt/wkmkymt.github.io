@@ -15,7 +15,7 @@ Message.prototype.addMessage = function() {
 	// アイコン
 	var icon = $("<img>")
 	.attr({
-		src: "/img/" + this.message.keyname + ".png",
+		src: "img/" + this.message.keyname + ".png",
 		alt: this.message.keyname + "'s icon"
 	});
 

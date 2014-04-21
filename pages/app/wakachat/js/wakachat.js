@@ -27,7 +27,7 @@ $(document).ready(function() {
 	for(var i = 0; i < sessionStorage.length; i++) {
 		var key = sessionStorage.key(i);
 		var item = JSON.parse(sessionStorage.getItem(key));
-		
+
 		var msg = new Message(item.name, item.text, item.keyname);
 		msg.addMessage();
 		delete msg;
@@ -84,7 +84,7 @@ var getUserName = function(n) {
 		n += 1;
 		return getUserName(n);
 	}
-	
+
 	return lastMsg.name;
 };
 
