@@ -95,7 +95,7 @@ header {
 @media screen and (max-width: 640px) {
   .main > section {
     width: 92%;
-    margin: 20px 0;
+    margin: 10px 0;
     padding: 4%;
   }
 
@@ -134,8 +134,21 @@ header {
 
 .main > section .content textarea {
   width: 94%;
-  height: 100px;
   padding: 3%;
   background-color: #eee;
   resize: none;
+}
+
+/* ===== PC & Tablet ===== */
+@media screen and (min-width: 641px) {
+  .main > section .content textarea {
+    height: 200px;
+  }
+}
+
+/* ===== SmartPhone ===== */
+@media screen and (max-width: 640px) {
+  .main > section .content textarea {
+    height: 50px;
+  }
 }
