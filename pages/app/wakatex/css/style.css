@@ -85,7 +85,7 @@ header {
 /* ===== PC & Tablet ===== */
 @media screen and (min-width: 641px) {
   .main > section {
-    width: 42%;
+    width: 46%;
     padding: 2%;
     float: left;
   }
