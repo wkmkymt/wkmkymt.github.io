@@ -4,8 +4,8 @@
 This is my website - [ワカメスープ](http://wkmkymt.github.io/ "ワカメスープ")
 
 ## Aplication
-* Waka Chat
-* Waka TeX
+* [Waka Chat](http://wkmkymt.github.io/pages/app/wakachat/)
+* [Waka TeX](http://wkmkymt.github.io/pages/app/wakatex/)
 
 ### Waka Chat
 This is an application that can chat with Wakami-Chan when you lonely alone.
