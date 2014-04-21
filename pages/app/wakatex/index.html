@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Mt.K" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="/js/mathjax-config.js" type="text/x-mathjax-config"></script>
+    <script src="/js/libs/jquery/jquery.min.js"></script>
+    <script src="/js/libs/angular/angular.min.js"></script>
+
+    <script src="/js/preview.js"></script>
+
+    <title>Waka TeX</title>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <h1>Waka TeX</h1>
+    </header>
+
+    <div class="main clearfix">
+      <section ng-controller="texCtrl">
+        <div class="section-wrap">
+          <header>
+            <h1>Input</h1>
+          </header>
+
+          <div class="content">
+            <textarea ng-model="tex" ng-change="updateTex(tex)"></textarea>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-wrap">
+          <header>
+            <h1>Output</h1>
+          </header>
+
+          <div id="preview" class="content">
+            \[
+            \]
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
