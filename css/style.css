@@ -8,163 +8,163 @@
    =================== Base ===================
    ============================================ */
 * {
-	margin: 0;
-	padding: 0;
-	border: none;
+    margin: 0;
+    padding: 0;
+    border: none;
 }
 
 html {
-	overflow-y: scroll;
+    overflow-y: scroll;
 }
 
 .clearfix {
-	min-height: 0;
+    min-height: 0;
 }
 
 .clearfix:after {
-	content: '.';
-	width: 0;
-	height: 0;
-	display: block;
-	visibility: hidden;
-	clear: both;
-	float: none;
-	font-size: 0;
+    content: '.';
+    width: 0;
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+    float: none;
+    font-size: 0;
 }
 
 body {
-	width: 900px;
-	margin: 0 auto;
-	padding: 10px 20px;
-	background-color: #ddff77;
-	color: #333333;
-	font-size: 18px;
-	font-family: 'Meiryo UI', 'Helvetica', 'ヒラギノ角ゴシック Pro W3', 'MSゴシック', 'Osaka', sans-serif;
-	font-weight: bold;
+    width: 900px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #ddff77;
+    color: #333333;
+    font-size: 18px;
+    font-family: 'Meiryo UI', 'Helvetica', 'ヒラギノ角ゴシック Pro W3', 'MSゴシック', 'Osaka', sans-serif;
+    font-weight: bold;
 }
 
 a {
-	text-decoration: none;
-	color: #0033ff;
+    text-decoration: none;
+    color: #0033ff;
 }
 
 a:hover {
-	color: #cc00ff;
+    color: #cc00ff;
 }
 
 h2 {
-	font-size: 35px;
-	color: #009000;
-	font-family: 'Stalinist One', cursive;
+    font-size: 35px;
+    color: #009000;
+    font-family: 'Stalinist One', cursive;
 }
 
 h3 {
-	font-size: 30px;
-	color: #0033ff;
-	font-family: 'Archivo Black', sans-serif;
+    font-size: 30px;
+    color: #0033ff;
+    font-family: 'Archivo Black', sans-serif;
 }
 
 h4 {
-	font-size: 22px;
-	color: #ff0000;
+    font-size: 22px;
+    color: #ff0000;
 }
 
 h5 {
-	font-size: 50px;
-	color: #ff3333;
-	font-family: 'Sigmar+One', cursive;
+    font-size: 50px;
+    color: #ff3333;
+    font-family: 'Sigmar+One', cursive;
 }
 
 ul {
-	list-style-type: none;
+    list-style-type: none;
 }
 
 /* ==============================================
    =================== Header ===================
    ============================================== */
 header {
-	width: 900px;
-	height: 100px;
-	padding: 10px 0;
+    width: 900px;
+    height: 100px;
+    padding: 10px 0;
 }
 
 header h1 a {
-	display: block;
-	margin: 0 auto;
+    display: block;
+    margin: 0 auto;
 }
 
 header h1 a,
 header h1 a img {
-	width: 570px;
-	height: 100px;
+    width: 570px;
+    height: 100px;
 }
 
 /* ===========================================
    =================== Nav ===================
    =========================================== */
 nav {
-	width: 840px;
-	height: 150px;
-	padding: 10px 30px;
+    width: 840px;
+    height: 150px;
+    padding: 10px 30px;
 }
 
 nav ul li {
-	float: left;
+    float: left;
 }
 
 nav ul li a {
-	display: block;
+    display: block;
 }
 
 nav ul li a,
 nav ul li a img {
-	width: 140px;
-	height: 150px;
+    width: 140px;
+    height: 150px;
 }
 
 /* ===============================================
    =================== Article ===================
    =============================================== */
 article {
-	width: 900px;
-	padding: 20px 0;
+    width: 900px;
+    padding: 20px 0;
 }
 
 article section header {
-	height: 50px;
-	line-height: 50px;
+    height: 50px;
+    line-height: 50px;
 }
 
 /* ==============================================
    =================== Footer ===================
    ============================================== */
 footer {
-	width: 900px;
-	height: 50px;
-	padding-bottom: 10px 0;
+    width: 900px;
+    height: 50px;
+    padding-bottom: 10px 0;
 }
 
 footer hr {
-	margin-bottom: 10px;
-	border-top: 1px solid #999999;
+    margin-bottom: 10px;
+    border-top: 1px solid #999999;
 }
 
 footer small {
-	height: 30px;
-	margin-right: 10px;
-	color: #555555;
-	font-size: 15px;
-	line-height: 30px;
-	float: right;
+    height: 30px;
+    margin-right: 10px;
+    color: #555555;
+    font-size: 15px;
+    line-height: 30px;
+    float: right;
 }
 
 footer small a,
 footer small a:visited {
-	color: #888888;
+    color: #888888;
 }
 
 footer small a:hover {
-	color: #000000;
+    color: #000000;
 }
 
 /* =================================
@@ -172,21 +172,21 @@ footer small a:hover {
    ================================= */
 
 ul.tdftad {
-	text-align: center;
-	list-style-type: none;
+    text-align: center;
+    list-style-type: none;
 }
 
 ul.tdftad li {
-	height: 20px;
-	font-size: 10px;
-	line-height: 20px;
+    height: 20px;
+    font-size: 10px;
+    line-height: 20px;
 }
 
 ul.tdftad li a,
 ul.tdftad li a:visited {
-	color: #888888;
+    color: #888888;
 }
 
 ul.tdftad li a:hover {
-	color: #000000;
+    color: #000000;
 }

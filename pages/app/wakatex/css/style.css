@@ -4,41 +4,41 @@
    ==================== Base ====================
    ============================================== */
 * {
-  margin: 0;
-  padding: 0;
-  border: none;
+    margin: 0;
+    padding: 0;
+    border: none;
 }
 
 html {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 body {
-  width: 100%;
-  min-height: 100%;
-  background-color: #6b4;
-  color: #333;
-  font-size: 100%;
-  font-family: Arial, Helvetica, "メイリオ", Meiryo "ヒラギノ角ゴ Pro W3", "MS Pゴシック", "Osaka", sans-serif;
-  font-weight: normal;
+    width: 100%;
+    min-height: 100%;
+    background-color: #6b4;
+    color: #333;
+    font-size: 100%;
+    font-family: Arial, Helvetica, "メイリオ", Meiryo "ヒラギノ角ゴ Pro W3", "MS Pゴシック", "Osaka", sans-serif;
+    font-weight: normal;
 }
 
 section,
 header {
-  display: block;
+    display: block;
 }
 
 .clearfix {
-  min-height: 0;
+    min-height: 0;
 }
 
 .clearfix:after {
-  content: ".";
-  display: block;
-  visibility: hidden;
-  height: 0;
-  clear: both;
+    content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
 }
 
 
@@ -46,30 +46,30 @@ header {
    ==================== Header ====================
    ================================================ */
 .site-header {
-  padding: 10px 20px;
-  background-color: #fff;
+    padding: 10px 20px;
+    background-color: #fff;
 }
 
 .site-header h1 {
-  height: 50px;
-  color: #5a3;
-  font-size: 200%;
-  line-height: 50px;
+    height: 50px;
+    color: #5a3;
+    font-size: 200%;
+    line-height: 50px;
 }
 
 /* ===== PC & Tablet ===== */
 @media screen and (min-width: 641px) {
-  .site-header {
-    padding: 10px 40px;
-    padding-left: 40px;
-  }
+    .site-header {
+        padding: 10px 40px;
+        padding-left: 40px;
+    }
 }
 
 /* ===== SmartPhone ===== */
 @media screen and (max-width: 640px) {
-  .site-header h1 {
-    text-align: center;
-  }
+    .site-header h1 {
+        text-align: center;
+    }
 }
 
 
@@ -77,78 +77,78 @@ header {
    ==================== Main ====================
    ============================================== */
 .main {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 /* ===== PC & Tablet ===== */
 @media screen and (min-width: 641px) {
-  .main > section {
-    width: 46%;
-    padding: 2%;
-    float: left;
-  }
+    .main > section {
+        width: 46%;
+        padding: 2%;
+        float: left;
+    }
 }
 
 /* ===== SmartPhone ===== */
 @media screen and (max-width: 640px) {
-  .main > section {
-    width: 92%;
-    margin: 10px 0;
-    padding: 4%;
-  }
+    .main > section {
+        width: 92%;
+        margin: 10px 0;
+        padding: 4%;
+    }
 
-  .main > section:first-of-type {
-    margin-top: 0;
-  }
+    .main > section:first-of-type {
+        margin-top: 0;
+    }
 
-  .main > section:last-of-type {
-    margin-bottom: 0;
-  }
+    .main > section:last-of-type {
+        margin-bottom: 0;
+    }
 }
 
 .main > section > .section-wrap {
-  padding: 10px;
-  background-color: #dfb;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -uu-border-radius: 5px;
+    padding: 10px;
+    background-color: #dfb;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -uu-border-radius: 5px;
 }
 
 .main > section header {
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
 }
 
 .main > section header h1 {
-  color: #5a3;
-  font-size: 150%;
+    color: #5a3;
+    font-size: 150%;
 }
 
 .main > section .content {
-  padding: 10px;
+    padding: 10px;
 }
 
 .main > section .content textarea {
-  width: 94%;
-  padding: 3%;
-  background-color: #eee;
-  resize: none;
+    width: 94%;
+    padding: 3%;
+    background-color: #eee;
+    resize: none;
 }
 
 /* ===== PC & Tablet ===== */
 @media screen and (min-width: 641px) {
-  .main > section .content textarea {
-    height: 200px;
-  }
+    .main > section .content textarea {
+        height: 200px;
+    }
 }
 
 /* ===== SmartPhone ===== */
 @media screen and (max-width: 640px) {
-  .main > section .content textarea {
-    height: 50px;
-  }
+    .main > section .content textarea {
+        height: 50px;
+    }
 }

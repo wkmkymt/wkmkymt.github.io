@@ -2,94 +2,94 @@
    ========== Image Gallery ==========
    =================================== */
 section#imgGallery header {
-	height: 40px;
-	line-height: 40px;
+    height: 40px;
+    line-height: 40px;
 }
 
 section#imgGallery p.explain {
-	margin-left: 30px;
+    margin-left: 30px;
 }
 
 /* =============================
    ========== Row Box ==========
    ============================= */
 .rowBox {
-	width: 900px;
-	height: 270px;
+    width: 900px;
+    height: 270px;
 }
 
 .rowBox div {
-	width: 185px;
-	padding: 10px 20px;
-	float: left;
+    width: 185px;
+    padding: 10px 20px;
+    float: left;
 }
 
 .rowBox div a {
-	display: block;
-	width: 185px;
-	height: 185px;
+    display: block;
+    width: 185px;
+    height: 185px;
 }
 
 .rowBox div a img {
-	width: 175px;
-	height: 175px;
-	margin-bottom: 5px;
-	border: 5px solid #0033ff;
+    width: 175px;
+    height: 175px;
+    margin-bottom: 5px;
+    border: 5px solid #0033ff;
 }
 
 .rowBox div a:hover img {
-	width: 185px;
-	height: 185px;
-	border: none;
+    width: 185px;
+    height: 185px;
+    border: none;
 }
 
 .rowBox div p {
-	height: 60px;
-	margin-top: 5px;
-	line-height: 30px;
-	text-align: center;
+    height: 60px;
+    margin-top: 5px;
+    line-height: 30px;
+    text-align: center;
 }
 
 .rowBox div p a {
-	display: inline;
+    display: inline;
 }
 
 /* ================================
    ========== Img Detail ==========
    ================================ */
 #imgDetail {
-	padding: 10px;
-	text-align: center;
+    padding: 10px;
+    text-align: center;
 }
 
 #imgDetail a img {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 #imgDetail h4 {
-	margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 /* =========================
    ========== Bar ==========
    ========================= */
 .miniBar {
-	padding: 10px 0;
+    padding: 10px 0;
 }
 
 .miniBar ul {
-	height: 30px;
-	line-height: 30px;
-	text-align: center;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
 }
 
 .miniBar ul li {
-	display: inline;
-	margin: 0 20px;
+    display: inline;
+    margin: 0 20px;
 }
 
 .miniBar ul li a.noHref,
 .miniBar ul li a.noHref:visited,
 .miniBar ul li a.noHref:hover {
-	color: #999999;
+    color: #999999;
 }

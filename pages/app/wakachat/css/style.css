@@ -6,286 +6,286 @@
    =================== Base ===================
    ============================================ */
 * {
-	margin: 0;
-  padding: 0;
-  border: none;
+    margin: 0;
+    padding: 0;
+    border: none;
 }
 
 html {
-	overflow-y: scroll;
+    overflow-y: scroll;
 }
 
 .clearfix {
-	min-height: 0;
+    min-height: 0;
 }
 
 .clearfix:after {
-	content: '.';
-	width: 0;
-	height: 0;
-	display: block;
-	visibility: hidden;
-	clear: both;
-	float: none;
-	font-size: 0;
+    content: '.';
+    width: 0;
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+    float: none;
+    font-size: 0;
 }
 
 body {
-	position: relative;
-	min-height: 100%;
-	margin: 0 auto;
-	padding: 65px 0 60px;
-	background-color: #aaaaaa;
-	color: #333333;
-	font-size: 16px;
-	font-family: 'Lato', 'Arial Black', 'MSゴシック', 'Osaka', sans-serif;
-	font-weight: 700;
+    position: relative;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 65px 0 60px;
+    background-color: #aaaaaa;
+    color: #333333;
+    font-size: 16px;
+    font-family: 'Lato', 'Arial Black', 'MSゴシック', 'Osaka', sans-serif;
+    font-weight: 700;
 }
 
 h1 {
-	font-size: 35px;
-	font-weight: 900;
+    font-size: 35px;
+    font-weight: 900;
 }
 
 small {
-	font-size: 17px;
-	font-weight: 900;
+    font-size: 17px;
+    font-weight: 900;
 }
 
 .siteBar {
-	position: fixed !important;
-	position: absolute;
-	z-index: 999;
-	width: 100%;
-	background-color: #555555;
-	color: #00cc00;
-	text-align: center;
+    position: fixed !important;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    background-color: #555555;
+    color: #00cc00;
+    text-align: center;
 }
 
 .greenBox {
-	padding: 10px 20px;
-	background-color: #77cc55;
-	border: 5px solid #666666;
-	-webkit-box-shadow: 5px 5px 10px #666666;
-	-moz-box-shadow: 5px 5px 10px #666666;
-	box-shadow: 5px 5px 10px #666666;
+    padding: 10px 20px;
+    background-color: #77cc55;
+    border: 5px solid #666666;
+    -webkit-box-shadow: 5px 5px 10px #666666;
+    -moz-box-shadow: 5px 5px 10px #666666;
+    box-shadow: 5px 5px 10px #666666;
 }
 
 .circleBtn {
-	padding: 0;
-	border: 2.5px solid #666666;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
-	-webkit-transition: All 0.5s ease;
-	-moz-transition: All 0.5s ease;
-	transition: All 0.5s ease;
+    padding: 0;
+    border: 2.5px solid #666666;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-transition: All 0.5s ease;
+    -moz-transition: All 0.5s ease;
+    transition: All 0.5s ease;
 }
 
 .circleBtn:hover {
-	background-color: #559933;
+    background-color: #559933;
 }
 
 .topBtn,
 .bottomBtn {
-	position: relative;
+    position: relative;
 }
 
 .topBtn:after,
 .bottomBtn:after {
-	position: absolute;
-	content: '';
-	width: 0;
-	height: 0;
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
 }
 
 .topBtn:after {
-	bottom: 10.5px;
-	left: 4px;
-	margin-bottom: 6px;
-	border-top: 0px solid transparent;
-	border-right: 26px solid transparent;
-	border-bottom: 39px solid #dddddd;
-	border-left: 26px solid transparent;
+    bottom: 10.5px;
+    left: 4px;
+    margin-bottom: 6px;
+    border-top: 0px solid transparent;
+    border-right: 26px solid transparent;
+    border-bottom: 39px solid #dddddd;
+    border-left: 26px solid transparent;
 }
 
 .bottomBtn:after {
-	top: 10.5px;
-	left: 4px;
-	margin-top: 6px;
-	border-top: 39px solid #dddddd;
-	border-right: 26px solid transparent;
-	border-bottom: 0px solid transparent;
-	border-left: 26px solid transparent;
+    top: 10.5px;
+    left: 4px;
+    margin-top: 6px;
+    border-top: 39px solid #dddddd;
+    border-right: 26px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 26px solid transparent;
 }
 
 /* ==============================================
    =================== Header ===================
    ============================================== */
 header {
-	top: 0;
-	left: 0;
-	height: 45px;
-	padding: 10px 0;
+    top: 0;
+    left: 0;
+    height: 45px;
+    padding: 10px 0;
 }
 
 h1 {
-	height: 45px;
-	line-height: 45px;
+    height: 45px;
+    line-height: 45px;
 }
 
 /* ============================================
    =================== Main ===================
    ============================================ */
 #main {
-	width: 960px;
-	height: 100%;
-	min-height: 220px;
-	margin: 20px auto;
-	padding: 0 10px;
+    width: 960px;
+    height: 100%;
+    min-height: 220px;
+    margin: 20px auto;
+    padding: 0 10px;
 }
 
 /* ================================
    ========== Manage Bar ==========
    ================================ */
 #manageBar {
-	position: fixed;
-	z-index: 999;
-	width: 320px;
-	height: 340px;
+    position: fixed;
+    z-index: 999;
+    width: 320px;
+    height: 340px;
 }
 
 /* ========================
    ===== Message Form =====
    ======================== */
 #messageForm {
-	width: 270px;
-	height: 190px;
-	margin-bottom: 20px;
+    width: 270px;
+    height: 190px;
+    margin-bottom: 20px;
 }
 
 #messageForm p {
-	height: 30px;
-	line-height: 30px;
+    height: 30px;
+    line-height: 30px;
 }
 
 #messageForm label {
-	margin-right: 14px;
+    margin-right: 14px;
 }
 
 #messageForm p#sendArea span {
-	margin-left: 10px;
-	color: #ff5555;
-	font-size: 15px;
-	font-weight: 900;
+    margin-left: 10px;
+    color: #ff5555;
+    font-size: 15px;
+    font-weight: 900;
 }
 
 #messageForm input[type="text"] {
-	padding: 0 5px;
-	width: 200px;
+    padding: 0 5px;
+    width: 200px;
 }
 
 #messageForm textarea {
-	width: 200px;
-	height: 90px;
-	margin-left: 60px;
-	padding: 5px;
-	vertical-align: bottom;
-	resize: none;
+    width: 200px;
+    height: 90px;
+    margin-left: 60px;
+    padding: 5px;
+    vertical-align: bottom;
+    resize: none;
 }
 
 #messageForm input[type="button"] {
-	width: 80px;
-	height: 20px;
-	background-color: #cccccc;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	-webkit-box-shadow: 2px 2px 4px #666666;
-	-moz-box-shadow: 2px 2px 4px #666666;
-	box-shadow: 2px 2px 4px #666666;
-	transition: All 0.5s ease;
+    width: 80px;
+    height: 20px;
+    background-color: #cccccc;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 2px 4px #666666;
+    -moz-box-shadow: 2px 2px 4px #666666;
+    box-shadow: 2px 2px 4px #666666;
+    transition: All 0.5s ease;
 }
 
 #messageForm input[type="button"]:hover {
-	color: #dddddd;
-	background-color: #666666;
+    color: #dddddd;
+    background-color: #666666;
 }
 
 /* ====================
    ===== Move Bar =====
    ==================== */
 #moveBar {
-	width: 200px;
-	height: 60px;
-	margin-top: 20px;
-	padding: 10px 60px;
+    width: 200px;
+    height: 60px;
+    margin-top: 20px;
+    padding: 10px 60px;
 }
 
 #moveBar .topBtn,
 #moveBar .bottomBtn {
-	width: 60px;
-	height: 60px;
+    width: 60px;
+    height: 60px;
 }
 
 #moveBar .topBtn {
-	float: left;
+    float: left;
 }
 
 #moveBar .bottomBtn {
-	float: right;
+    float: right;
 }
 
 /* ===============================
    ========== Chat Area ==========
    =============================== */
 #chatArea {
-	width: 570px;
-	margin-left: 340px;
+    width: 570px;
+    margin-left: 340px;
 }
 
 #chatArea ul {
-	list-style-type: none;
+    list-style-type: none;
 }
 
 #chatArea ul li {
-	margin: 10px 0;
+    margin: 10px 0;
 }
 
 #chatArea ul li img {
-	width: 46px;
-	height: 46px;
-	border: 2px solid #666666;
+    width: 46px;
+    height: 46px;
+    border: 2px solid #666666;
 }
 
 #chatArea ul li .balloon {
-	position: relative;
-	max-width: 436px;
-	padding: 10px 20px;
-	background-color: #dddddd;
-	line-height: 26px;
-	word-wrap: break-word;
-	border: 2px solid #666666;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
-	-webkit-box-shadow: 2px 2px 4px #666666;
-	-moz-box-shadow: 2px 2px 4px #666666;
-	box-shadow: 2px 2px 4px #666666;
+    position: relative;
+    max-width: 436px;
+    padding: 10px 20px;
+    background-color: #dddddd;
+    line-height: 26px;
+    word-wrap: break-word;
+    border: 2px solid #666666;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 2px 2px 4px #666666;
+    -moz-box-shadow: 2px 2px 4px #666666;
+    box-shadow: 2px 2px 4px #666666;
 }
 
 #chatArea ul li .balloon:before,
 #chatArea ul li .balloon:after {
-	content: '';
-	position: absolute;
-	width: 0;
-	height: 0;
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
 }
 
 #chatArea ul li span {
-	margin-right: 20px;
-	color: #ff5555;
-	font-weight: 900;
+    margin-right: 20px;
+    color: #ff5555;
+    font-weight: 900;
 }
 
 /* =================
@@ -293,31 +293,31 @@ h1 {
    ================= */
 
 #chatArea ul li.user {
-	float: left;
-	clear: both;
+    float: left;
+    clear: both;
 }
 
 #chatArea ul li.user img {
-	margin-right: 40px;
-	float: left;
+    margin-right: 40px;
+    float: left;
 }
 
 #chatArea ul li.user .balloon {
-	float: left;
+    float: left;
 }
 
 #chatArea ul li.user .balloon:before {
-	left: -30px;
-	top: 17.5px;
-	border-right: 30px solid #666666;
-	border-top: 15px solid transparent;
+    left: -30px;
+    top: 17.5px;
+    border-right: 30px solid #666666;
+    border-top: 15px solid transparent;
 }
 
 #chatArea ul li.user .balloon:after {
-	left: -20px;
-	top: 20.5px;
-	border-right: 20px solid #dddddd;
-	border-top: 10px solid transparent;
+    left: -20px;
+    top: 20.5px;
+    border-right: 20px solid #dddddd;
+    border-top: 10px solid transparent;
 }
 
 /* ===================
@@ -325,31 +325,31 @@ h1 {
    =================== */
 
 #chatArea ul li.wakami {
-	float: right;
-	clear: both;
+    float: right;
+    clear: both;
 }
 
 #chatArea ul li.wakami img {
-	margin-left: 40px;
-	float: right;
+    margin-left: 40px;
+    float: right;
 }
 
 #chatArea ul li.wakami .balloon {
-	float: right;
+    float: right;
 }
 
 #chatArea ul li.wakami .balloon:before {
-	right: -30px;
-	top: 17.5px;
-	border-left: 30px solid #666666;
-	border-top: 15px solid transparent;
+    right: -30px;
+    top: 17.5px;
+    border-left: 30px solid #666666;
+    border-top: 15px solid transparent;
 }
 
 #chatArea ul li.wakami .balloon:after {
-	right: -20px;
-	top: 20.5px;
-	border-left: 20px solid #dddddd;
-	border-top: 10px solid transparent;
+    right: -20px;
+    top: 20.5px;
+    border-left: 20px solid #dddddd;
+    border-top: 10px solid transparent;
 }
 
 /* ==============================================
@@ -357,37 +357,37 @@ h1 {
    ============================================== */
 
 footer {
-	bottom: 0;
-	left: 0;
-	height: 20px;
-	padding: 10px 0 30px;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+    padding: 10px 0 30px;
 }
 
 footer p small {
-	height: 20px;
-	line-height: 20px;
+    height: 20px;
+    line-height: 20px;
 }
 
 /* =================================
    ========== Advertising ==========
    ================================= */
 ul.tdftad {
-		position: fixed !important;
-		position: absolute;
-		bottom: 0;
-		z-index: 999;
-		width: 100%;
-		text-align: center;
+    position: fixed !important;
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+    width: 100%;
+    text-align: center;
 }
 
 ul.tdftad li {
-		height: 20px;
-		line-height: 20px;
-		list-style-type: none;
+    height: 20px;
+    line-height: 20px;
+    list-style-type: none;
 }
 
 ul.tdftad li a {
-		font-size: 10px;
-		color: #aaaaaa;
-		text-decoration: none;
+    font-size: 10px;
+    color: #aaaaaa;
+    text-decoration: none;
 }
