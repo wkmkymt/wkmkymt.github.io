@@ -46,6 +46,7 @@ header {
    ==================== Header ====================
    ================================================ */
 .site-header {
+    width: 100%;
     padding: 10px 20px;
     background-color: #fff;
 }
@@ -84,6 +85,11 @@ header {
 
 /* ===== PC & Tablet ===== */
 @media screen and (min-width: 641px) {
+    .main {
+        overflow: hidden;
+        zoom: 1;
+    }
+
     .main > section {
         width: 46%;
         padding: 2%;
@@ -151,4 +157,25 @@ header {
     .main > section .content textarea {
         height: 50px;
     }
+}
+
+
+/* ================================================
+   ==================== Footer ====================
+   ================================================ */
+.site-footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.site-footer p {
+    height: 30px;
+    color: #5a3;
+    font-size: 130%;
+    line-height: 30px;
+    text-align: center;
 }
