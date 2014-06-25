@@ -38,6 +38,14 @@ BookPage.prototype.getTemplateElement = function() {
 
 };
 
+/* Set Next and Previous Number */
+BookPage.prototype.setNextPrevNum = function() {
+
+  this.prevNum = (this.currentNum > this.minNum) ? this.currentNum - 1 : false;
+  this.nextNum = (this.currentNum < this.maxNum) ? this.currentNum + 1 : false;
+
+};
+
 /* Next Page */
 BookPage.prototype.nextPage = function() {
 
@@ -46,6 +54,7 @@ BookPage.prototype.nextPage = function() {
     this.currentNum = this.minNum;
 
   this.setNextPrevNum();
+  this.displayPage();
 
 };
 
@@ -57,21 +66,16 @@ BookPage.prototype.prevPage = function() {
     this.currentNum = this.minNum;
 
   this.setNextPrevNum();
-
-};
-
-/* Set Next and Previous Number */
-BookPage.prototype.setNextPrevNum = function() {
-
-  this.prevNum = (this.currentNum > this.minNum) ? this.currentNum - 1 : false;
-  this.nextNum = (this.currentNum < this.maxNum) ? this.currentNum + 1 : false;
+  this.displayPage();
 
 };
 
 
 $(function() {
 
-  var book = new BookPage("#page", "#pageMain", 0, 0, 10);
+  var book = new BookPage("#page", "#pageMain", 0, 0, 1);
   book.displayPage();
 
+  $("#prevButton").on("mouseup touchend", function() { book.prevPage(); });
+  $("#nextButton").on("mouseup touchend", function() { book.nextPage(); });
 });
