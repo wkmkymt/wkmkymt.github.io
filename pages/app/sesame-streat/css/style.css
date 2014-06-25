@@ -71,8 +71,6 @@ body {
     width: 15%;
     height: 15%;
     background-color: #ff4;
-    font-size: 300%;
-    color: #d60;
     border: 2.5px solid #666;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -83,7 +81,6 @@ body {
 
 .button:hover {
     background-color: #f93;
-    color: #ff4;
     -webkit-box-shadow: 2px 2px 4px #666;
     -moz-box-shadow: 2px 2px 4px #666;
     box-shadow: 2px 2px 4px #666;
@@ -92,8 +89,7 @@ body {
 .prevButton:after,
 .nextButton:after {
     position: absolute;
-    top: 30%;
-    left: 40%;
+    content: "";
     width: 0;
     height: 0;
 }
@@ -106,14 +102,6 @@ body {
 .nextButton {
     right: -7.5%;
     float: right;
-}
-
-.prevButton:after {
-    content: "<";
-}
-
-.nextButton:after {
-    content: ">";
 }
 
 
@@ -129,7 +117,7 @@ body {
 }
 
 .siteFooter p {
-    font-size: 90%;
+    font-size: 13px;
 }
 
 .siteFooter p a {

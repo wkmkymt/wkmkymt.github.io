@@ -1,1 +1,19 @@
 @charset "UTF-8";
+
+.title {
+    text-align: center;
+}
+
+.title img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wakame {
+    text-align: center;
+}
+
+.wakame img {
+    width: 30%;
+    height: 30%;
+}
