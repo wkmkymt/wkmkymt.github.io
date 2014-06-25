@@ -11,14 +11,10 @@ var BookPage = function(templateBaseID, outputID, currentNum, minNum, maxNum) {
   this.minNum         = minNum;
   this.maxNum         = maxNum;
 
-  this.prevNum        = (this.currentNum > this.minNum) ? this.currentNum - 1 : false;
-  this.nextNum        = (this.currentNum < this.maxNum) ? this.currentNum + 1 : false;
-
   // console.debug("[Template]: ", this.getTemplateElement());
   // console.debug("[PageArea]: ", this.pageArea);
   // console.debug("[Current]: ", this.currentNum);
   // console.debug("[Min - Max]: ", this.minNum, this.maxNum);
-  // console.debug("[Prev - Next]: ", this.prevNum, this.nextNum);
 
 };
 
@@ -38,22 +34,14 @@ BookPage.prototype.getTemplateElement = function() {
 
 };
 
-/* Set Next and Previous Number */
-BookPage.prototype.setNextPrevNum = function() {
-
-  this.prevNum = (this.currentNum > this.minNum) ? this.currentNum - 1 : false;
-  this.nextNum = (this.currentNum < this.maxNum) ? this.currentNum + 1 : false;
-
-};
-
 /* Next Page */
 BookPage.prototype.nextPage = function() {
 
-  this.currentNum = this.nextNum;
-  if(this.currentNum == false)
+  if(this.currentNum < this.maxNum)
+    this.currentNum += 1;
+  else
     this.currentNum = this.minNum;
 
-  this.setNextPrevNum();
   this.displayPage();
 
 };
@@ -61,11 +49,11 @@ BookPage.prototype.nextPage = function() {
 /* Previous Page */
 BookPage.prototype.prevPage = function() {
 
-  this.currentNum = this.prevNum;
-  if(this.currentNum == false)
+  if(this.currentNum > this.minNum)
+    this.currentNum -= 1;
+  else
     this.currentNum = this.minNum;
 
-  this.setNextPrevNum();
   this.displayPage();
 
 };
