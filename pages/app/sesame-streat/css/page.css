@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
-.title {
+.bookTitle {
     text-align: center;
 }
 
-.title img {
+.bookTitle img {
     width: 80%;
     margin: 0 auto;
 }
