@@ -18,7 +18,7 @@ $(function() {
   $(".main      ").css({ "padding": paddingValue, "width": widthValue });
 
 
-  /* Resize '.main' and '#page' Size */
+  /* Resize '.main' and '.page' Size */
   var resizePage = function() {
     // Get window size
     var windowWidth   = $(window).width();
@@ -32,8 +32,8 @@ $(function() {
 
     // Resize
     $(".main").height(mainHeight);
-    $("#page").width(pageWidth);
-    $("#page").height(pageHeight);
+    $(".page").width(pageWidth);
+    $(".page").height(pageHeight);
 
     // console.debug("[WindowSize]: ", windowWidth, windowHeight);
     // console.debug("[FooterHeight]: ", footerHeight);

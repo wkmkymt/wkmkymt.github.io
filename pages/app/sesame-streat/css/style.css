@@ -57,12 +57,63 @@ body {
 /* ==============================================
    ==================== Main ====================
    ============================================== */
-#page {
+.page {
     margin: 0 auto;
     background-color: #fff;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
+}
+
+.button {
+    position: relative;
+    top: 45%;
+    width: 15%;
+    height: 15%;
+    background-color: #ff4;
+    font-size: 300%;
+    color: #d60;
+    border: 2.5px solid #666;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    transition: All 0.2s linear;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #f93;
+    color: #ff4;
+    -webkit-box-shadow: 2px 2px 4px #666;
+    -moz-box-shadow: 2px 2px 4px #666;
+    box-shadow: 2px 2px 4px #666;
+}
+
+.prevButton:after,
+.nextButton:after {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    width: 0;
+    height: 0;
+}
+
+.prevButton {
+    left: -7.5%;
+    float: left;
+}
+
+.nextButton {
+    right: -7.5%;
+    float: right;
+}
+
+.prevButton:after {
+    content: "<";
+}
+
+.nextButton:after {
+    content: ">";
 }
 
 
