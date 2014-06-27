@@ -49,8 +49,6 @@ BookPage.prototype.nextPage = function() {
   else
     this.currentNum = this.minNum;
 
-  this.displayPage();
-
 };
 
 /* Previous Page */
@@ -61,19 +59,25 @@ BookPage.prototype.prevPage = function() {
   else
     this.currentNum = this.minNum;
 
-  this.displayPage();
-
 };
 
 
 $(function() {
 
   var maxPageNum = 10;
+
   var book = new BookPage("#page", "#pageMain", 0, maxPageNum);
   book.displayPage();
   book.settingEvent();
 
-  $("#prevButton").bind("mouseup tap", function() { book.prevPage(); });
-  $("#nextButton").bind("mouseup tap", function() { book.nextPage(); });
+  // The event when prev or next button was pushed
+  $("#prevButton").bind("mouseup tap", function() {
+    book.prevPage();
+    book.displayPage();
+  });
+  $("#nextButton").bind("mouseup tap", function() {
+    book.nextPage();
+    book.displayPage();
+  });
 
 });
