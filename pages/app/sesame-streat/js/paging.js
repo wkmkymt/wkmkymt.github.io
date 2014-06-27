@@ -73,7 +73,7 @@ $(function() {
   book.displayPage();
   book.settingEvent();
 
-  $("#prevButton").on("mouseup touchend", function() { book.prevPage(); });
-  $("#nextButton").on("mouseup touchend", function() { book.nextPage(); });
+  $("#prevButton").bind("mouseup touchend", function() { book.prevPage(); });
+  $("#nextButton").bind("mouseup touchend", function() { book.nextPage(); });
 
 });
