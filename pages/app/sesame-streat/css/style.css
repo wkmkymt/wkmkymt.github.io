@@ -67,6 +67,7 @@ body {
 
 .button {
     position: relative;
+    z-index: 100;
     top: 45%;
     width: 15%;
     height: 15%;

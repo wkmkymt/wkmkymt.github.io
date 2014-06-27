@@ -64,18 +64,20 @@ BookPage.prototype.prevPage = function() {
 
 $(function() {
 
-  var maxPageNum = 10;
+  var currentNum = 1;
+  var maxPageNum = 2;
 
-  var book = new BookPage("#page", "#pageMain", 0, maxPageNum);
+
+  var book = new BookPage("#PageTemplate-", "#pageMain", currentNum, maxPageNum);
   book.displayPage();
   book.settingEvent();
 
   // The event when prev or next button was pushed
-  $("#prevButton").bind("mouseup tap", function() {
+  $("#prevButton").on("mouseup tap", function() {
     book.prevPage();
     book.displayPage();
   });
-  $("#nextButton").bind("mouseup tap", function() {
+  $("#nextButton").on("mouseup tap", function() {
     book.nextPage();
     book.displayPage();
   });
