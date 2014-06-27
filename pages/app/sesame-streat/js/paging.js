@@ -1,14 +1,14 @@
 /* =============
  *   Book Page
  * ============== */
-var BookPage = function(templateBaseID, outputID, currentNum, minNum, maxNum) {
+var BookPage = function(templateBaseID, outputID, currentNum, maxNum) {
 
   this.templateBaseID = templateBaseID;
   this.digitNum       = 2;
   this.pageArea       = $(outputID);
 
   this.currentNum     = currentNum;
-  this.minNum         = minNum;
+  this.minNum         = 0;
   this.maxNum         = maxNum;
 
   // console.debug("[Template]: ", this.getTemplateElement());
@@ -23,6 +23,13 @@ BookPage.prototype.displayPage = function() {
 
   var template = Handlebars.compile(this.getTemplateElement().html());
   this.pageArea.html(template);
+
+};
+
+/* Start Animation and Set Event */
+BookPage.prototype.settingEvent = function() {
+
+
 
 };
 
@@ -61,9 +68,12 @@ BookPage.prototype.prevPage = function() {
 
 $(function() {
 
-  var book = new BookPage("#page", "#pageMain", 0, 0, 1);
+  var maxPageNum = 1;
+  var book = new BookPage("#page", "#pageMain", 0, maxPageNum);
   book.displayPage();
+  book.settingEvent();
 
   $("#prevButton").on("mouseup touchend", function() { book.prevPage(); });
   $("#nextButton").on("mouseup touchend", function() { book.nextPage(); });
+
 });
