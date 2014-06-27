@@ -86,14 +86,6 @@ body {
     box-shadow: 2px 2px 4px #666;
 }
 
-.prevButton:after,
-.nextButton:after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-}
-
 .prevButton {
     left: -7.5%;
     float: left;
