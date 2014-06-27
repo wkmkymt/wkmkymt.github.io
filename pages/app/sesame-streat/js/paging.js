@@ -68,7 +68,7 @@ BookPage.prototype.prevPage = function() {
 
 $(function() {
 
-  var maxPageNum = 1;
+  var maxPageNum = 10;
   var book = new BookPage("#page", "#pageMain", 0, maxPageNum);
   book.displayPage();
   book.settingEvent();
