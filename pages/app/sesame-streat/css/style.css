@@ -89,12 +89,12 @@ body {
 }
 
 .prevButton {
-    left: -5%;
+    left: -2%;
     float: left;
 }
 
 .nextButton {
-    right: -5%;
+    right: -2%;
     float: right;
 }
 
