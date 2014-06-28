@@ -8,16 +8,44 @@
     height: 100%;
 }
 
+/*
+ *  .page-00  ~  .page-nm
+ *  .page-00 > div  ~  .page-nm > div
+ */
+#pageMain > div,
+#pageMain > div > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+ *  .page-00 > div > *  ~  .page-nm > div > *
+ */
+#pageMain > div > div > * {
+    position: absolute;
+}
+
+/*
+ *  .page-01  ~  .page-nm
+ */
 #pageMain > div {
     background-image: url("../img/screen/background2.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
+/*
+ *  .page-00
+ */
 #pageMain > #page-00 {
     background-image: url("../img/screen/background1.svg");
 }
 
+/* Circle Box */
 #pageMain .circleBox div {
     background-color: #fa1;
     -webkit-border-radius: 50%;
@@ -25,6 +53,7 @@
     border-radius: 50%;
 }
 
+/* Narration Box */
 #pageMain .narrationBox div {
     width: 90%;
     margin: 2%;
@@ -39,6 +68,7 @@
     word-wrap: break-word;
 }
 
+/* Message Box */
 #pageMain .messageBox div {
     padding: 2%;
     background-color: #ccc;
@@ -58,79 +88,35 @@
     height: 0;
 }
 
+/* List Card */
 #pageMain .listCard div {
     /* メモ帳系のスタイル */
 }
 
-/* ========================
+
+/* ************************
  *   レスポンシブ対応まだ
- * ======================== */
+ * ************************ */
 
 /* ===== PC & Tablet ===== */
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 641px),
+@media screen and (min-height: 641px) {
     #pageMain .narrationBox div {
         font-size: 140%;
     }
 }
 
 /* ===== SmartPhone ===== */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 640px),
+@media screen and (max-height: 640px) {
     #pageMain .narrationBox div {
         font-size: 100%;
     }
 }
 
-#page-00,
-#page-01,
-#page-02,
-#page-03,
-#page-04,
-#page-05,
-#page-06,
-#page-07,
-#page-08,
-#page-09,
-#page-10,
-#page-00 > *,
-#page-01 > *,
-#page-02 > *,
-#page-03 > *,
-#page-04 > *,
-#page-05 > *,
-#page-06 > *,
-#page-07 > *,
-#page-08 > *,
-#page-09 > *,
-#page-10 > * {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-#page-00 > * > *,
-#page-01 > * > *,
-#page-02 > * > *,
-#page-03 > * > *,
-#page-04 > * > *,
-#page-05 > * > *,
-#page-06 > * > *,
-#page-07 > * > *,
-#page-08 > * > *,
-#page-09 > * > *,
-#page-10 > * > * {
-    position: absolute;
-}
-
-
 /* ===========
  *   Page 00
  * =========== */
-#page-00 {
-    background-image: url("../img/screen/background.svg");
-}
-
 #page-00 .logo img {
     z-index: 5;
     top: 3%;
