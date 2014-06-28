@@ -131,26 +131,36 @@ body {
     text-align: center;
 }
 
-/* ===== 641px ~ ===== */
-@media screen and (min-width: 641px) {
-    .siteFooter p small {
-        font-size: 80%;
-    }
+.siteFooter p small {
+    font-size: 70%;
 }
 
+/* ===== 641px ~ ===== */
+/*
+@media screen and (min-width: 641px) {
+    .siteFooter p small {
+        font-size: 70%;
+    }
+}
+*/
+
 /* ===== 460px ~ 640px ===== */
+/*
 @media screen and (min-width: 461px) and (max-width: 640px) {
     .siteFooter p small {
         font-size: 75%;
     }
 }
+*/
 
 /* ===== ~ 460px ===== */
+/*
 @media screen and (max-width: 460px) {
     .siteFooter p small {
         font-size: 70%;
     }
 }
+*/
 
 .siteFooter p a {
     color: #ff8;
