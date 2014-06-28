@@ -94,26 +94,6 @@
 }
 
 
-/* ************************
- *   レスポンシブ対応まだ
- * ************************ */
-
-/* ===== PC & Tablet ===== */
-@media screen and (min-width: 641px),
-@media screen and (min-height: 641px) {
-    #pageMain .narrationBox div {
-        font-size: 140%;
-    }
-}
-
-/* ===== SmartPhone ===== */
-@media screen and (max-width: 640px),
-@media screen and (max-height: 640px) {
-    #pageMain .narrationBox div {
-        font-size: 100%;
-    }
-}
-
 /* ===========
  *   Page 00
  * =========== */
