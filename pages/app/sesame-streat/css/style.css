@@ -70,8 +70,8 @@ body {
     position: relative;
     z-index: 100;
     top: 45%;
-    width: 15%;
-    height: 15%;
+    width: 10%;
+    height: 10%;
     background-color: #ff4;
     border: 2.5px solid #666;
     -webkit-border-radius: 50%;
@@ -89,12 +89,12 @@ body {
 }
 
 .prevButton {
-    left: -7.5%;
+    left: -5%;
     float: left;
 }
 
 .nextButton {
-    right: -7.5%;
+    right: -5%;
     float: right;
 }
 
