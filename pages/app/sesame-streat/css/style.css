@@ -71,7 +71,7 @@ body {
 /* ===== ~ 460px ===== */
 @media screen and (max-width: 460px) {
     body {
-        font-size: 55%;
+        font-size: 50%;
     }
 }
 
