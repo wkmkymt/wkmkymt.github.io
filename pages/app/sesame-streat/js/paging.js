@@ -62,24 +62,37 @@ BookPage.prototype.prevPage = function() {
 };
 
 
+/* Show / Hide Element */
+var toggleElement = function(num, min, max) {
+  $("#prevButton").show();
+  $("#nextButton").show();
+  if(num == min)
+    $("#prevButton").hide();
+  if(num == max)
+    $("#nextButton").hide();
+};
+
+
 $(function() {
 
-  var currentNum = 1;
-  var maxPageNum = 2;
-
+  var currentNum = 3;
+  var maxPageNum = 3;
 
   var book = new BookPage("#PageTemplate-", "#pageMain", currentNum, maxPageNum);
   book.displayPage();
+  toggleElement(book.currentNum, book.minNum, book.maxNum);
   book.settingEvent();
 
   // The event when prev or next button was pushed
   $("#prevButton").on("mouseup tap", function() {
     book.prevPage();
     book.displayPage();
+    toggleElement(book.currentNum, book.minNum, book.maxNum);
   });
   $("#nextButton").on("mouseup tap", function() {
     book.nextPage();
     book.displayPage();
+    toggleElement(book.currentNum, book.minNum, book.maxNum);
   });
 
 });

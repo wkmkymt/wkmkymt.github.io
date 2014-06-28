@@ -46,6 +46,7 @@ body {
     background-color: #afa;
     color: #333;
     font-size: 100%;
+    -webkit-text-size-adjust : none;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, "メイリオ", Meiryo,
                  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "MS Pゴシック", "MS PGothic",
                  "Osaka", Osaka, sans-serif;
