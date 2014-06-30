@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Mt.K" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/page.css" />
+		<link rel="stylesheet" href="css/animation.css" />
+
+		<title>胡麻通りの路地裏</title>
+	</head>
+
+	<body>
+		<!-- ========== Main ========== -->
+		<div class="main">
+			<div class="page">
+				<div id="prevButton" class="button prevButton"></div>
+				<div id="nextButton" class="button nextButton"></div>
+				<div id="pageMain">
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer class="siteFooter">
+			<p>
+				<small>本作品は、<a href="http://5jcup.org" target="_blank">HTML5 Japan Cup 2014</a>応募作品であり、
+					セサミワークショップが著作権を有する素材(画像, 音声, 動画, データ等)を使用しています。</small>
+			</p>
+		</footer>
+
+
+		<!-- ========== Template ========== -->
+		<!-- ===== Opning Page ===== -->
+		<script type="text/x-handlebars-template" id="PageTemplate-00">
+			<div id="page-00">
+				<div class="logo">
+					<img src="img/sesame/logo.svg" />
+				</div>
+				<div class="milk">
+					<img src="img/food/milk.svg" />
+				</div>
+				<div class="egg">
+					<img src="img/food/egg.svg" />
+				</div>
+				<div class="strawberry">
+					<img src="img/food/strawberry.svg" />
+				</div>
+				<div class="title1">
+					<img src="img/screen/title1.svg" />
+				</div>
+				<div class="title2">
+					<img src="img/screen/title2.svg" />
+				</div>
+				<div class="elmo">
+					<img src="img/sesame/elmo/elmo2.svg" />
+				</div>
+				<div class="cake">
+					<img src="img/food/cake.svg" />
+				</div>
+				<div class="cookie_monster">
+					<img src="img/sesame/cookie_monster/cookie_monster2.svg" />
+				</div>
+				<div class="big_bird">
+					<img src="img/sesame/big_bird/big_bird3.svg" />
+				</div>
+			</div>
+		</script>
+
+		<!-- ===== Section Page 1 ===== -->
+    <!-- Page 1-1 -->
+		<script type="text/x-handlebars-template" id="PageTemplate-01">
+			<div id="page-01">
+				<div class="narration narrationBox">
+					<div>
+						<p>たのしそうに　かいわを　している　エルモたち。<br />
+							いったい　なにを　はなして　いるんでしょう？</p>
+					</div>
+				</div>
+				<div class="elmo">
+					<img src="img/sesame/elmo/elmo3.svg" />
+				</div>
+				<div class="big_bird">
+					<img src="img/sesame/big_bird/big_bird8.svg" />
+				</div>
+			</div>
+		</script>
+
+		<!-- Page 1-2 -->
+		<script type="text/x-handlebars-template" id="PageTemplate-02">
+			<div id="page-02">
+				<div class="narration narrationBox">
+					<div>
+						<p>きょうは　クッキーモンスターの　たんじょうび!<br />
+							エルモたちは　その　パーティについて　かんがえている　ようです。</p>
+					</div>
+				</div>
+				<div class="cookie_monster">
+					<img src="img/sesame/cookie_monster/cookie_monster8.svg" />
+				</div>
+				<div class="cake">
+					<img src="img/food/cake.svg" />
+				</div>
+				<div class="circle1 circleBox">
+					<div></div>
+				</div>
+				<div class="circle2 circleBox">
+					<div></div>
+				</div>
+				<div class="circle3 circleBox">
+					<div></div>
+				</div>
+				<div class="circle4 circleBox">
+					<div></div>
+				</div>
+				<div class="elmo">
+					<img src="img/sesame/elmo/elmo10.svg" />
+				</div>
+				<div class="big_bird">
+					<img src="img/sesame/big_bird/big_bird9.svg" />
+				</div>
+			</div>
+		</script>
+
+		<!-- Page 1-3 -->
+		<script type="text/x-handlebars-template" id="PageTemplate-03">
+			<div id="page-03">
+				<div class="narration narrationBox">
+					<div>
+						<p>どうやら　ケーキを　じぶんたちで<br>つくることに　したようです。<br />
+							ケーキを　つくるために　ひつような　<br>ざいりょうを　かいに、
+							みんなは　かいものに　でかけます。</p>
+					</div>
+				</div>
+				<div class="message1 messageBox">
+					<div>
+						<p>きみも　ケーキの　ざいりょうを　<br>かう　のを　てつだってよ！</p>
+					</div>
+				</div>
+				<div class="elmo">
+					<img src="img/sesame/elmo/elmo2.svg" />
+				</div>
+        <div class="message2 messageBox">
+          <div>
+            <p>ひつような　ざいりょうは　ぼくに　まかせて！</p>
+          </div>
+        </div>
+				<div class="foodList listCard">
+					<div></div>
+				</div>
+				<div class="big_bird">
+					<img src="img/sesame/big_bird/big_bird11.svg" />
+				</div>
+			</div>
+		</script>
+
+		<!-- Page 1-4 -->
+		<script type="text/x-handlebars-template" id="PageTemplate-04">
+			<div id="page-04">
+				<div class="narration narrationBox">
+					<div>
+            <p>ビッグバードの　メモを　さんこうに、<br />
+              　ケーキづくりに　ひつような　ものを　えらぼう！</p>
+					</div>
+        </div>
+        <div class="big_bird">
+          <img src="img/sesame/big_bird/big_bird12.svg" />
+        </div>
+        <div class="foodList listCard">
+          <div></div>
+        </div>
+        <div class="egg">
+          <img src="img/food/egg.svg" />
+        </div>
+        <div class="eggName foodName">
+          <span>たまご</span>
+        </div>
+        <div class="milk">
+          <img src="img/food/milk.svg" />
+        </div>
+        <div class="milkName foodName">
+          <span>ぎゅうにゅう</span>
+        </div>
+        <div class="strawberry">
+          <img src="img/food/strawberry.svg" />
+        </div>
+        <div class="strawberryName foodName">
+          <span>いちご</span>
+        </div>
+        <div class="elmo">
+          <img src="img/sesame/elmo/elmo10.svg" />
+        </div>
+        <div class="ch-egg choiceFood">
+          <div>
+            <img src="img/food/egg.svg" />
+          </div>
+        </div>
+        <div class="ch-chair choiceFood">
+          <div>
+            <img src="img/decorations/chair.svg" />
+          </div>
+        </div>
+        <div class="ch-me choiceFood">
+          <div>
+            <img src="img/decorations/me.svg" />
+          </div>
+        </div>
+        <div class="message messageBox">
+          <div>
+            <p>おいしそう　だけど、　いま　かうのは　やめて　おこう。</p>
+          </div>
+        </div>
+      </div>
+    </script>
+
+		<!-- Page 1-5 -->
+		<script type="text/x-handlebars-template" id="PageTemplate-05">
+			<div id="page-05">
+				<div class="narration narrationBox">
+					<div>
+            <p>ビッグバードの　メモを　さんこうに、<br />
+              　ケーキづくりに　ひつような　ものを　えらぼう！</p>
+					</div>
+        </div>
+        <div class="big_bird">
+          <img src="img/sesame/big_bird/big_bird12.svg" />
+        </div>
+        <div class="foodList listCard">
+          <div></div>
+        </div>
+        <div class="egg">
+          <img src="img/food/egg.svg" />
+        </div>
+        <div class="eggName foodName">
+          <span>たまご</span>
+        </div>
+        <div class="milk">
+          <img src="img/food/milk.svg" />
+        </div>
+        <div class="milkName foodName">
+          <span>ぎゅうにゅう</span>
+        </div>
+        <div class="strawberry">
+          <img src="img/food/strawberry.svg" />
+        </div>
+        <div class="strawberryName foodName">
+          <span>いちご</span>
+        </div>
+        <div class="elmo">
+          <img src="img/sesame/elmo/elmo10.svg" />
+        </div>
+        <div class="ch-star choiceFood">
+          <div>
+            <img src="img/decorations/star.svg" />
+          </div>
+        </div>
+        <div class="ch-seven choiceFood">
+          <div>
+            <img src="img/decorations/7.svg" />
+          </div>
+        </div>
+        <div class="ch-milk choiceFood">
+          <div>
+            <img src="img/food/milk.svg" />
+          </div>
+        </div>
+        <div class="message messageBox">
+          <div>
+            <p>おいしそう　だけど、　いま　かうのは　やめて　おこう。</p>
+          </div>
+        </div>
+      </div>
+    </script>
+
+		<!-- Page 1-6 -->
+		<script type="text/x-handlebars-template" id="PageTemplate-06">
+			<div id="page-06">
+				<div class="narration narrationBox">
+					<div>
+            <p>ビッグバードの　メモを　さんこうに、<br />
+              　ケーキづくりに　ひつような　ものを　えらぼう！</p>
+					</div>
+        </div>
+        <div class="big_bird">
+          <img src="img/sesame/big_bird/big_bird12.svg" />
+        </div>
+        <div class="foodList listCard">
+          <div></div>
+        </div>
+        <div class="egg">
+          <img src="img/food/egg.svg" />
+        </div>
+        <div class="eggName foodName">
+          <span>たまご</span>
+        </div>
+        <div class="milk">
+          <img src="img/food/milk.svg" />
+        </div>
+        <div class="milkName foodName">
+          <span>ぎゅうにゅう</span>
+        </div>
+        <div class="strawberry">
+          <img src="img/food/strawberry.svg" />
+        </div>
+        <div class="strawberryName foodName">
+          <span>いちご</span>
+        </div>
+        <div class="elmo">
+          <img src="img/sesame/elmo/elmo10.svg" />
+        </div>
+        <div class="ch-oscar choiceFood">
+          <div>
+            <img src="img/sesame/oscar/oscar4.svg" />
+          </div>
+        </div>
+        <div class="ch-strawberry choiceFood">
+          <div>
+            <img src="img/food/strawberry.svg" />
+          </div>
+        </div>
+        <div class="ch-big_bird choiceFood">
+          <div>
+            <img src="img/sesame/big_bird/big_bird6.svg" />
+          </div>
+        </div>
+        <div class="message messageBox">
+          <div>
+            <p>おいしそう　だけど、　いま　かうのは　やめて　おこう。</p>
+          </div>
+        </div>
+      </div>
+    </script>
+
+		<!-- Page 1-7 -->
+		<script type="text/x-handlebars-template" id="PageTemplate-07">
+			<div id="page-07">
+				<div class="narration narrationBox">
+					<div>
+            <p>ちゃんと　ケーキの　ざいりょうを　そろえる　ことが　できました！<br />
+              パーティと　きいて　みんなが　あつまって　きたみたいです!</p>
+					</div>
+        </div>
+        <div class="message messageBox">
+          <div>
+            <p>これで　ケーキが　つくれるね！　ありがとう！</p>
+          </div>
+        </div>
+        <div class="elmo">
+          <img src="img/sesame/elmo/elmo2.svg" />
+        </div>
+        <div class="big_bird">
+          <img src="img/sesame/big_bird/big_bird8.svg" />
+        </div>
+        <div class="abby">
+          <img src="img/sesame/abby/abby10.svg" />
+        </div>
+        <div class="bert">
+          <img src="img/sesame/bert/bert8.svg" />
+        </div>
+        <div class="ernie">
+          <img src="img/sesame/ernie/ernie5.svg" />
+        </div>
+        <div class="grover">
+          <img src="img/sesame/grover/grover5.svg" />
+        </div>
+        <div class="zoe">
+          <img src="img/sesame/zoe/zoe9.svg" />
+        </div>
+        <div class="oscar">
+          <img src="img/sesame/oscar/oscar5.svg" />
+        </div>
+      </div>
+    </script>
+
+
+		<!-- Section Page 3 -->
+		<!-- Page 3-1 -->
+		<script type="text/x-handlebars-template" id="PageTemplate-08">
+			<div id="page-08">
+				<div class="narration narrationBox">
+					<div>
+						<p>さあ　パーティ　の<br>じゅんびだ</p>
+					</div>
+				</div>
+				<div class="elmo">
+					<img src="img/sesame/elmo/elmo4.svg" />
+				</div>
+				<div class="big_bird">
+					<img src="img/sesame/big_bird/big_bird8.svg" />
+				</div>
+				<div class="golver">
+					<img src="img/sesame/grover/grover1.svg" />
+				</div>
+				<div class="zoe">
+					<img src="img/sesame/zoe/zoe1.svg" />
+				</div>
+			</div>
+		</script>
+
+		<!-- Page 3-2 -->
+		<script type="text/x-handlebars-template" id="PageTemplate-09">
+			<div id="page-09">
+				<div class="narration narrationBox">
+					<div>
+						<p>かざり を　ようい　しよう！<br>
+							ほしは　いくつ　あるかな？</p>
+					</div>
+				</div>
+				<div class="abby slide-in-fromL">
+					<img src="img/sesame/abby/abby3.svg" class="shake"/>
+				</div>
+				<div class="num">
+					<img src="img/decorations/1.svg" class="num1" />
+					<img src="img/decorations/2.svg" class="num2" />
+					<img src="img/decorations/3.svg" class="num3" />
+				</div>
+				<div class="fade-in">
+					<img src="img/decorations/star.svg" class="star1 zooming" onClick="starcount(1);" />
+					<img src="img/decorations/star.svg" class="star2" onClick="starcount(2);" />
+					<img src="img/decorations/star.svg" class="star3" onClick="starcount(3);" />
+				</div>
+				<div class="clear fade-in" style="display: none;">
+					<img src="img/decorations/3.svg"/>
+				</div>
+			</div>
+		</script>
+
+		<!-- Page 3-3 -->
+		<script type="text/x-handlebars-template" id="PageTemplate-10">
+			<div id="page-10">
+				<div class="narration narrationBox">
+					<div>
+						<p>バートが　いすを　もってきたよ。 <br>かぞえてみよう</p>
+					</div>
+				</div>
+				<div class="bert slide-in-fromL">
+					<img src="img/sesame/bert/bert7.svg" />
+				</div>
+				<div class="num">
+					<img src="img/decorations/1.svg" class="num1" />
+					<img src="img/decorations/2.svg" class="num2" />
+					<img src="img/decorations/3.svg" class="num3" />
+					<img src="img/decorations/4.svg" class="num4" />
+				</div>
+				<div class="fade-in">
+					<img src="img/decorations/chair.svg" class="chair1 zooming" onClick="chaircount(1);" />
+					<img src="img/decorations/chair.svg" class="chair2" onClick="chaircount(2);" />
+					<img src="img/decorations/chair.svg" class="chair3" onClick="chaircount(3);" />
+					<img src="img/decorations/chair.svg" class="chair4" onClick="chaircount(4);" />
+				</div>
+				<div class="clear fade-in" style="display: none;">
+					<img src="img/decorations/4.svg"/>
+				</div>
+			</div>
+		</script>
+
+		<!-- Page 3-4 -->
+		<script type="text/x-handlebars-template" id="PageTemplate-11">
+			<div id="page-11">
+				<div class="narration narrationBox">
+					<div>
+						<p>ゾーイが　いすを　３つ　もってきたよ <br>
+							ぜんぶで　いくつかな？</p>
+					</div>
+				</div>
+				<div class="bert">
+					<img src="img/sesame/bert/bert7.svg" />
+				</div>
+				<div class="zoe slide-in-fromR">
+					<img src="img/sesame/zoe/zoe6.svg" />
+				</div>
+				<div class="num">
+					<img src="img/decorations/1.svg" class="num1" />
+					<img src="img/decorations/2.svg" class="num2" />
+					<img src="img/decorations/3.svg" class="num3" />
+					<img src="img/decorations/4.svg" class="num4" />
+					<img src="img/decorations/5.svg" class="num5" />
+					<img src="img/decorations/6.svg" class="num6" />
+					<img src="img/decorations/7.svg" class="num7" />
+				</div>
+				<div>
+					<img src="img/decorations/chair.svg" class="chair1 zooming" onClick="chaircount2(1);" />
+					<img src="img/decorations/chair.svg" class="chair2" onClick="chaircount2(2);" />
+					<img src="img/decorations/chair.svg" class="chair3" onClick="chaircount2(3);" />
+					<img src="img/decorations/chair.svg" class="chair4" onClick="chaircount2(4);" />
+					<img src="img/decorations/chair.svg" class="chair5" onClick="chaircount2(5);"/>
+					<img src="img/decorations/chair.svg" class="chair6" onClick="chaircount2(6);" />
+					<img src="img/decorations/chair.svg" class="chair7" onClick="chaircount2(7);" />
+				</div>
+				<div class="clear fade-in" style="display: none;">
+					<img src="img/decorations/7.svg"/>
+				</div>
+			</div>
+		</script>
+
+
+		<!-- Page 3-5 -->
+		<script type="text/x-handlebars-template" id="PageTemplate-12">
+			<div id="page-12">
+				<div class="narration narrationBox">
+					<div>
+						<p>ああっ！クッキーモンスターが　いすを<br>
+							２つ　たべちゃった！ のこりは　いくつかな？</p>
+					</div>
+				</div>
+	      <div class="bert">
+					<img src="img/sesame/bert/bert7.svg" />
+				</div>
+				<div class="cookie_monster fade-out">
+					<img src="img/sesame/cookie_monster/cookie_monster1.svg" />
+				</div>
+				<div class="num">
+					<img src="img/decorations/1.svg" class="num1" />
+					<img src="img/decorations/2.svg" class="num2" />
+					<img src="img/decorations/3.svg" class="num3" />
+					<img src="img/decorations/4.svg" class="num4" />
+					<img src="img/decorations/5.svg" class="num5" />
+					<img src="img/decorations/6.svg" class="num6" />
+					<img src="img/decorations/7.svg" class="num7" />
+				</div>
+				<div>
+					<img src="img/decorations/chair.svg" class="chair1 zooming" onClick="chaircount3(1);" />
+					<img src="img/decorations/chair.svg" class="chair2" onClick="chaircount3(2);" />
+					<img src="img/decorations/chair.svg" class="chair3" onClick="chaircount3(3);" />
+					<img src="img/decorations/chair.svg" class="chair4" onClick="chaircount3(4);" />
+					<img src="img/decorations/chair.svg" class="chair5" onClick="chaircount3(5);"/>
+					<img src="img/decorations/chair.svg" class="chair6 fade-out"/>
+					<img src="img/decorations/chair.svg" class="chair7 fade-out"/>
+				</div>
+				<div class="clear fade-in" style="display: none;">
+					<img src="img/decorations/5.svg"/>
+				</div>
+			</div>
+		</script>
+
+
+		<!-- Page 3-6 -->
+		<script type="text/x-handlebars-template" id="PageTemplate-13">
+			<div id="page-13">
+				<div class="narration narrationBox">
+					<div>
+						<p>みんなで　10にん　いるよ<br>
+							いすは　あといくつ　いるかな？</p>
+					</div>
+				</div>
+				<div class="abby">
+					<img src="img/sesame/abby/abby1.svg" />
+				</div>
+				<div class="bert">
+					<img src="img/sesame/bert/bert1.svg" />
+				</div>
+				<div class="big_bird">
+					<img src="img/sesame/big_bird/big_bird1.svg" />
+				</div>
+				<div class="cookie_monster">
+					<img src="img/sesame/cookie_monster/cookie_monster1.svg" />
+				</div>
+				<div class="elmo">
+					<img src="img/sesame/elmo/elmo1.svg" />
+				</div>
+				<div class="ernie">
+					<img src="img/sesame/ernie/ernie1.svg" />
+				</div>
+				<div class="grover">
+					<img src="img/sesame/grover/grover1.svg" />
+				</div>
+				<div class="oscar">
+					<img src="img/sesame/oscar/oscar1.svg" />
+				</div>
+				<div class="zoe">
+					<img src="img/sesame/zoe/zoe1.svg" />
+				</div>
+				<div class="me">
+					<img src="img/sesame/elmo/elmo.svg" /><!-- me -->
+				</div>
+				<div class="num">
+					<img src="img/decorations/1.svg" class="num1" />
+					<img src="img/decorations/2.svg" class="num2" />
+					<img src="img/decorations/3.svg" class="num3" />
+					<img src="img/decorations/4.svg" class="num4" />
+					<img src="img/decorations/5.svg" class="num5" />
+				</div>
+				<div>
+					<img src="img/decorations/chair.svg" class="chair11" />
+					<img src="img/decorations/chair.svg" class="chair7" />
+					<img src="img/decorations/chair.svg" class="chair8" />
+					<img src="img/decorations/chair.svg" class="chair9" />
+					<img src="img/decorations/chair.svg" class="chair10" />
+				</div>
+				<div>
+					<img src="img/decorations/chair.svg" class="chair1 zooming" onClick="chaircount4(1);" />
+					<img src="img/decorations/chair.svg" class="chair2" onClick="chaircount4(2);" />
+					<img src="img/decorations/chair.svg" class="chair3" onClick="chaircount4(3);" />
+					<img src="img/decorations/chair.svg" class="chair4" onClick="chaircount4(4);" />
+					<img src="img/decorations/chair.svg" class="chair5" onClick="chaircount4(5);"/>
+				</div>
+				<div class="clear fade-in" style="display: none;">
+					<img src="img/decorations/5.svg"/>
+				</div>
+			</div>
+		</script>
+
+
+		<!-- Page 3-7 -->
+		<script type="text/x-handlebars-template" id="PageTemplate-14">
+			<div id="page-14">
+				<div class="narration narrationBox">
+					<div>
+						<p>そろそろ　パーティの　よういが　できたみたい</p>
+					</div>
+				</div>
+			</div>
+		</script>
+
+
+		<!-- Page 3-8 -->
+		<script type="text/x-handlebars-template" id="PageTemplate-15">
+			<div id="page-15">
+				<div class="narration narrationBox">
+					<div>
+						<p>たんじょうび　おめでとう！<br>クッキーモンスター！</p>
+					</div>
+				</div>
+			</div>
+		</script>
+
+		<!-- Script -->
+		<script src="js/lib/jquery.min.js"></script>
+		<script src="js/lib/handlebars.js"></script>
+		<script src="js/resize.js"></script>
+		<script src="js/paging.js"></script>
+		<script src="js/decorations.js"></script>
+	</body>
+</html>
